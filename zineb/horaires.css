@@ -1,0 +1,66 @@
+*{
+    margin:0;box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(horaires.jpg);
+    background-repeat:no-repeat ;
+    background-size: 100% 100%;
+}    
+header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    background-color: rgb(18, 175, 232);
+}
+main {
+    margin-top: 60px; 
+}
+.left{
+    width: 50%;
+}
+.right{
+    width:50%;
+    padding-top:1.5%;
+}
+img{
+    width: 30%;
+    height: 80%;
+}
+.nav{
+    display:inline; text-decoration: none;
+    color: azure;
+    font-size: 19px;
+    font-family: forte;
+}
+li{ 
+    display:inline;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+.horaires{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+    border: 1px red  solid;
+    background-color: rgb(250, 250, 247);
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.slogan{
+    margin-left: 26%;
+    margin-top: 10%;
+    color: red;
+}
+section{
+    height: 100%;
+    width: 100%;
+}

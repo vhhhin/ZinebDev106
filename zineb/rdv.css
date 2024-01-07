@@ -1,0 +1,127 @@
+*{
+    margin:0;box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(18, 175, 232);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+}
+main {
+    margin-top: 60px;
+}
+section{
+    height:100%;
+    background-image: url(hospital.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width:50%;
+    padding-top:1.5%;
+}
+img{
+    width: 30%;
+    height: 80%;
+}
+.nav{
+    display:inline;
+    display: flex;
+    justify-content: space-around;
+     text-decoration: none;
+    color: azure;
+    font-size: 19px;
+    font-family: forte;
+}
+li{   
+    display:inline;
+    margin-right:15%;
+}
+ul{
+    display: flex;
+}
+MARQUEE{
+    color:red;
+    background-color:white;
+    font-size: large;
+    text-align: center;
+    
+}
+.info{
+   display: flex;
+   color: white;
+   font-weight: bolder;
+   background-color:red;
+    justify-content: space-around;
+    text-align: center;
+    height: 8%;
+}
+body {
+    
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image:url(docteur.jpg);
+   
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+form {
+    max-width: 800px;
+    max-height:100%;
+    margin-top: 5%;
+    background-color: #f4f4f4;
+    padding: 50px;
+    
+    float: right;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.titre{
+  
+    width: 100%;
+    background-color: rgb(238, 25, 25);
+    display: flex;
+}
+.infos{
+    height: 70%;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 20%;
+}
+.butto{
+    height: 15%;
+    width: 100%;
+    padding-top: 20%;
+}
+h3{
+
+text-align: center;
+}
+input{
+    width: 100%;
+}
+i{
+    margin-left: 80%;
+    width: 100%;
+}
+button{
+    width: 100%;
+}

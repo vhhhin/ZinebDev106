@@ -1,0 +1,275 @@
+*{
+    margin:0;box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(18, 175, 232);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+}
+main {
+    margin-top: 60px;
+}
+section{
+    height:100%;
+    background-image: url(hospital.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width:50%;
+    padding-top:1.5%;
+}
+img{
+    width: 30%;
+    height: 80%;
+}
+.nav{
+    display:inline; text-decoration: none;
+    color: azure;
+    font-size: 19px;
+    font-family: forte;
+}
+li{   
+    display:inline;
+    margin-right:15%;
+}
+ul{
+    display: flex;
+}
+MARQUEE{
+    color:red;
+    background-color:white;
+    font-size: large;
+    text-align: center;
+    
+}
+.info{
+   display: flex;
+   color: white;
+   font-weight: bolder;
+   background-color:red;
+    justify-content: space-around;
+    text-align: center;
+    height: 8%;
+}
+.description{
+    width: 60%;
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 10px;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    box-shadow : 8px 8px 8px 8px black  ;
+}
+.titre{
+    margin-left: 30%;
+    margin-top: 10%;
+    font-weight: bolder;
+}
+h3{
+    color: blue;
+    padding-left: 30%;
+    padding-top: 10%;
+}
+.directeur{
+    display: flex;
+    padding-bottom: 10%;
+}
+p{  padding-left: 3%;
+    padding-right: 10%;
+    text-align: center;
+}
+.direct{
+    width:20%;
+    height: 20%;
+    margin-right:5%;
+    border: 5px solid blue ;
+}
+.photos{
+    text-align: center;
+   
+}
+#salles{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.num{
+    color: blue;
+    font-size: x-large;
+    padding-left: 5%;
+}
+
+.tele{
+    width: 5%;
+    height:40%;
+}
+.gmail{
+    width: 20%;
+    height:20%;
+}
+.localisation{
+    width: 10%;
+    height: 30%;
+}
+.clinis{
+ display: flex;
+}
+.clinisante{
+    margin-left:2%;
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+}
+.coeur{
+    width: 25%;
+    height: 25%;
+    margin-left: 35%;
+}
+.lit{
+    width: 10%;
+    height: 25%;
+    margin-left: 40%;
+}
+.enfant{
+    width: 25%;
+    height: 20%;
+    margin-left: 50%;
+}
+.local{
+    border: 1px solid black;
+    box-shadow : 2px 2px 2px 2px rgb(15, 179, 225) ;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 40%;
+}
+
+.maps{
+    
+    margin-top: 10%;
+    margin-left: 5%; 
+    margin-right: 20%;
+    width:60%;
+    height: 30%;
+    float: right;
+    border: 1px solid black;
+    box-shadow : 2px 2px 2px 2px beige ;
+ } 
+h1{
+    color: blue;
+  text-align: center;
+
+    font-weight:bolder;
+}
+span{
+    text-align: center;
+    margin-left: 70%;
+}
+.img{
+    width: 20%;
+    height: 10%;
+}
+.spme{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.équipe{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    margin-top: 5%;
+    height: 25%;
+}
+
+#a{
+    background-color: rgb(148, 212, 237);
+    border: 2px solid;
+    border-radius: 20px;
+    width: 10%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#équi{
+    text-align: center;
+    color: blue;
+    display: flex;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+h6{
+    text-align: center;
+    color: red;
+}
+
+
+figure{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10%;
+    
+}
+
+.icon{
+    width: 100%;
+    height: 10%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+#icon{
+    width:5%;
+    height: 50%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+.num{
+    color: blue;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+   
+    width: 100%;
+    height: 30%;
+    background-color: brown;
+    display: flex;
+   
+}
+.liens{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-top: 1%; 
+}
+.propos{
+    margin-left: 3%;
+    padding-top: 2%;
+}
+.li{
+    margin-left: 30%;
+    margin-top: 2%;
+}
+.re{
+    margin-left: 30%;
+   margin-top: 2%;
+}

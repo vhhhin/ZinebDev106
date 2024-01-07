@@ -1,0 +1,111 @@
+
+*{
+    margin:0;box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(18, 175, 232);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+}
+main {
+    margin-top: 60px; /* Assure que le contenu ne soit pas caché derrière l'en-tête */
+}
+
+.left{
+    width: 50%;
+    
+}
+
+.right{
+    width:50%;
+    padding-top:1%;
+   
+}
+
+img{
+    width: 30%;
+    height: 80%;
+}
+
+.nav{
+    display:inline; text-decoration: none;
+    color: azure;
+    font-size:19px;
+    font-family: forte;
+}
+li{
+    
+    display:inline;
+    margin-right:15%;
+}
+ul{
+    display: flex;
+}
+pre{ 
+   padding-top: 0%;
+}
+.info{
+  
+   display: flex;
+   
+   color: white;
+   font-weight: bolder;
+   background-color:red;
+    justify-content: space-around;
+}
+
+#l{ text-align: center;
+    width: 20%;
+    
+    background-color: whitesmoke;
+    box-shadow : 6px 6px 6px 6px gainsboro ;
+ 
+}
+.spme{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin-top: 3%;
+}
+
+.spmé{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3%;
+    
+ }
+.sp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+ .spécialités{
+    text-align: center;
+    color:  rgb(18, 175, 232);
+}
+.spm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+.imgspe{
+    width: 90%;
+    height: 50%;
+    margin-top: 5%;
+}
+h6{
+    color: red;
+    text-align: center;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <meta charset="UTF-8">
+        <title>Clinique Rabat - CliniSanté</title>
+        
+        <link rel="stylesheet" href="dr.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <style>
+       
+          #gallery {
+            position: relative;
+            max-width: 600px; 
+            margin: auto;
+            margin-top: 10%;
+            margin-bottom: 15%;
+          }
+          #gallerie{
+            position: relative;
+            max-width: 600px; 
+            margin: auto;
+            margin-top: 20%;
+            
+          }
+          .image {
+            display: none;
+            width: 100%;
+          }
+          #prev, #next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+          }
+          #prev {
+            left: 10px;
+          }
+          #next {
+            right: 10px;
+          }
+        </style>
+</head>
+<body>
+       <header >
+       <div class="left"> <img src="clinilogo.jpg" ></div>
+      <div class="right">
+         <nav>
+          <ul>
+            <li id="menu"><a href="index.html"class="nav">accueil</a></li>   
+            <li id="menu"><a href="spécialité.html"class="nav">services</a></li>      
+            <li id="menu"><a href="rdv.html"class="nav">rendez-vous</a> </li>
+            <li id="menu"><a href="horaires.html"class="nav">horaires</a></li>
+          </ul>
+       </nav>
+    </div>
+      </header>
+     <section><br><br><br>
+      <MARQUEE>Découvrez une nouvelle ère de soins de santé à notre clinique, où l'excellence médicale rencontre la chaleur humaine, pour un bien-être total à chaque étape de votre parcours vers la santé. Soin exceptionnel, santé exceptionnelle : Votre bien-être est notre priorité.</MARQUEE><br>
+      <div class="info"> 
+         <div> <img src="local-removebg-preview.png"class="localisation" >
+           Adresse: secteur 10 1 rue  AL IJJASS, RABAT 10100
+         </div>  
+         <div><img src="tele-removebg-preview.png" class="tele">
+           Tel: <br>+212 64 56 00 21 / +212 77 33 56 43
+         </div>
+         <div> <img src="gmail-removebg-preview.png" class="gmail">
+            Email: contact@CliniSanté  
+         </div> 
+       </div>
+
+     </section> 
+     <div class="container mt-5">
+    
+     <div class="titre"><b> CliniSanté est un établissement de soins privé situé au cœur de Rabat</b></div>
+    <div class="description">Plongez dans l'univers apaisant de notre clinique, 
+      où la santé et le bien-être sont au cœur de chaque instant. 
+      Notre équipe dévouée de professionnels de la santé vous accueille
+       dans un environnement moderne et chaleureux, alliant technologie 
+       de pointe et approche humaine. Que ce soit pour une consultation 
+       médicale, un suivi préventif ou un traitement spécialisé, 
+       nous sommes là pour vous offrir des soins personnalisés et attentifs. 
+       Chez nous, chaque patient est unique, et nous nous engageons à fournir 
+       des services de qualité, axés sur la compassion et le respect.
+        Bienvenue dans un espace dédié à votre bien-être, où la santé prend tout son sens.
+      <br> #Santé #BienÊtre #QualitéDeSoins
+   </div>  
+   <div class="photos"> 
+      <h1>LA CLINIQUE </h1></div> 
+
+      <div id="gallery">
+        <img class="image" src="CliniSante.png" >
+        
+      
+        <img class="image" src="bloc.jpg" >
+        
+        <img class="image" src="gyne.jpg">
+        
+        <img class="image" src="radiolo.jpg" >
+       
+  <button id="prev" onclick="changeImage(-1)">❮</button>
+  <button id="next" onclick="changeImage(1)">❯</button>
+</div>
+<div class="photos"> 
+  <h1>EN PHOTOS </h1></div> 
+<div id="gallerie">
+        <img class="image" src="urgences.jpg" >
+        
+        <img class="image" src="sale.jpg" >
+        <img class="image" src="salle.jpg" >
+        
+        <img class="image" src="ophta.jpg" >
+        <img class="image" src="pediatre.jpg" >
+   <button id="prev" onclick="changeImage(-1)">❮</button>
+  <button id="next" onclick="changeImage(1)">❯</button>
+</div>
+<script>
+  let currentImage = 1;
+  showImage(currentImage);
+
+  function changeImage(n) {
+    showImage(currentImage += n);
+  }
+
+  function showImage(n) {
+    let images = document.getElementsByClassName("image");
+
+    if (n > images.length) {
+      currentImage = 1;
+    }
+
+    if (n < 1) {
+      currentImage = images.length;
+    }
+
+    for (let i = 0; i < images.length; i++) {
+      images[i].style.display = "none";
+    }
+
+    images[currentImage - 1].style.display = "block";
+  }
+</script>
+<div class="icon">
+  <figure>
+  <img src="heart-removebg-preview.png"id="icon">
+  <figcaption><br> <b class="num">11</b> <br> Boxes de réanimations</figcaption>
+  <img src="lit.png" id="icon">
+  <figcaption> <br><b class="num">29</b> <br>  Lits en unités</figcaption>
+  <img src="déchocage.png"id="icon">
+  <figcaption> <br> <b class="num">2 </b>  <br>  Salles de déchocage de soins intensifs</figcaption>
+  <img src="enfant.jpg"id="icon">
+  <figcaption>  <br> <b class="num">9 </b> <br>  Lits de nurserie et 2 couveuses</figcaption>
+</figure>
+</div>
+      <h3>MOT DU DIRECTEUR GÉNÉRAL</h3>
+      <div class="directeur">
+       <p>Au nom de l’ensemble du corps médical et du personnel, je vous souhaite la 
+          bienvenue à CliniSanté. Nous sommes un établissement de santé médico- 
+          chirurgical privé et conventionné, situé au quartier des Hôpitaux à Rabat. 
+          Depuis son ouverture en juillet 2016, CliniSanté s’est positionnée comme
+          une référence nationale pour ses prestations de soins de qualité, à la  
+          pointe des technologies les plus innovantes. Aussi, avons-nous mis en 
+          place un plateau médico-technique moderne axé autour de pôles de compétences 
+          répondant à notre exigence de performance et de qualité du soin. 
+          Assumer des soins et un traitement adéquat en vue d’une convalescence 
+          optimale dans un environnement confortable en assurant un haut niveau
+          de qualité et de sécurité pour les patients, et offrir des conditions 
+          de travail favorables tant pour les médecins que pour le personnel
+          paramédical, telle était notre motivation de création d’une structure 
+          de soins de santé conformément aux normes pertinentes.</p>
+      <img src="direct.jpg" class="direct" >
+   </div> 
+</div>
+   <div class="local"> <B ><h1>Localisation</h1>  </B>
+    <span>secteur 10 1 rue  AL IJJASS, RABAT 10100 
+      
+    </span>
+
+     <img src="maps.png" class="maps"> 
+    
+</div><br><br><br>
+
+<div id="équi"> 
+  <img src="dricone-removebg-preview.png" id="icon">
+   <h1><B>NOTRE EQUIPE</B></h1>
+ </div> 
+<div class="équipe">
+   <div id="a">
+     <h6> Dr Fatine El Alaoui</h6> <br>
+     Professeur de gynécologie obstérique
+   </div>
+   <div id="a">
+     <h6> Dr.Saad Belhaj</h6> <br>
+      professeur de chirurgie cardiaque 
+   </div>
+   <div id="a">
+     <h6> Dr.Hussein Mohammed</h6> <br>
+     Professeur d'ophtalmologie
+   </div>
+   <div id="a"> 
+     <h6>Dr. Berrada Anass </h6> <br>
+     Professeur de Radiothérapie et de cancerologie
+   </div>
+<div id="a">
+       <h6>Dr.Nazha Laalou </h6><br>
+       Professeur en Pneumologie et fibroscopie bronchique</div>
+
+ <div id="a">
+       <h6>Dr.Ghizlane El Ghazi</h6><br>
+       Professeur en neurochirurgie</div>
+ 
+</div> <br><br><br>
+<footer>
+ <div class="propos"><b>A Propos:</b> <br>
+ CliniSanté de Rabat. <br>
+  
+   info@polycrabat.com <br>
+   +212 661 14 75 46
+</div> 
+   <div class="li">
+  <b class="liens">Liens Directs:</b> 
+  <a href="index.html"class="nav">accueil</a></li>   
+  <a href="spécialité.html"class="nav">services</a></li>      
+  <a href="rdv.html"class="nav"> rendez-vous</a> </li>
+  <a href="horaires.html"class="nav"> horaires</a></li>
+ </ul>
+</div>
+<div class="re">
+  <b>Résaux sociaux :</b> <br>
+ <a href="">Instagram</a>  <br>
+ <a href="">Facebook</a>  <br>
+</div>
+</footer>
+    </body>
+</html>
